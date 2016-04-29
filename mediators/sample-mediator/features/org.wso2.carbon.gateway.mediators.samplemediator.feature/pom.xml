@@ -47,6 +47,16 @@
             <groupId>org.wso2.eclipse.osgi</groupId>
             <artifactId>org.eclipse.osgi.services</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.saxon</artifactId>
+            <version>9.7.0-4_1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.xmlresolver</artifactId>
+            <version>1.2_1</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -79,6 +89,14 @@
                                 <bundle>
                                     <symbolicName>org.wso2.carbon.gateway.mediators.samplemediator</symbolicName>
                                     <version>${carbon.gw.version}</version>
+                                </bundle>
+                                <bundle>
+                                    <symbolicName>org.apache.servicemix.bundles.saxon</symbolicName>
+                                    <version>9.7.0-4_1</version>
+                                </bundle>
+                                <bundle>
+                                    <symbolicName>org.apache.servicemix.bundles.xmlresolver</symbolicName>
+                                    <version>1.2.0.1</version>
                                 </bundle>
                             </bundles>
                         </configuration>
